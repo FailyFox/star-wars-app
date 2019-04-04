@@ -31,3 +31,17 @@
     transform: rotate(360deg);
   }
 }
+
+table, td, th{
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 600px;
+  text-align: center !important;
+}
+table{
+  margin-bottom: 25px;
+}
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
+}

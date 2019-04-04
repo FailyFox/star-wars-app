@@ -26,16 +26,45 @@ class StarService extends Component {
     return (
       planets.map((planet, index) => (
         <div>
-          <table style="border: 1px solid black">
-            <tr>Name: {planet.name}</tr>
-            <tr>Rotation period: {planet.rotation_period}</tr>
-            <tr>Orbital period: {planet.orbital_period}</tr>
-            <tr>Diameter: {planet.diameter}</tr>
-            <tr>Climate: {planet.climat}</tr>
-            <tr>Gravity: {planet.gravity}</tr>
-            <tr>Terrain: {planet.terrain}</tr>
-            <tr>Surface water: {planet.surface_water}</tr>
-            <tr>Population: {planet.population}</tr>
+          <table className="center">
+            <tbody>
+            <tr>
+              <th>Name</th>
+              <th>{planet.name}</th>
+            </tr>
+            <tr>
+              <td>Rotation period</td>
+              <td>{planet.rotation_period}</td>
+            </tr>
+            <tr>
+              <td>Orbital period</td>
+              <td>{planet.orbital_period}</td>
+            </tr>
+            <tr>
+              <td>Diameter</td>
+              <td>{planet.diameter}</td>
+            </tr>
+            <tr>
+              <td>Climate</td>
+              <td>{planet.climate}</td>
+            </tr>
+            <tr>
+              <td>Gravity</td>
+              <td>{planet.gravity}</td>
+            </tr>
+            <tr>
+              <td>Terrain</td>
+              <td>{planet.terrain}</td>
+            </tr>
+            <tr>
+              <td>Surface water</td>
+              <td>{planet.surface_water}</td>
+            </tr>
+            <tr>
+              <td>Population</td>
+              <td>{planet.population}</td>
+            </tr>
+            </tbody>
           </table>
         </div>
       ))
